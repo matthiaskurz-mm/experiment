@@ -5,8 +5,7 @@
     <author email="info@mediamachine.de" href="http://mediamachine.de">media machine GmbH</author>
     <access origin="*" />
     <platform name="ios" />
-    <platform name="android" />
-    <plugin name="fi.avaus.cordova.geolocation" source="pgb" spec="0.3.11" />
+     <plugin name="fi.avaus.cordova.geolocation" source="pgb" spec="0.3.11" />
     <preference name="DisallowOverscroll" value="true" />
     <icon src="phonegap_wings.png" />
     <engine name="android" spec="~5.1.1" />
