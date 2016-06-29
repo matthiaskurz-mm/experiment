@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget xmlns:gap="http://phonegap.com/ns/1.0" id="de.mediamachine.experiment" version="0.0.1"
 		xmlns="http://www.w3.org/ns/widgets">
-	<name>Listen-App</name>
+	<name>Experimentelle App</name>
 	<description>Auf dem Weg zu einer richtigen App!</description>
 	<author email="info@mediamachine.de" href="http://mediamachine.de">media machine GmbH</author>
 
