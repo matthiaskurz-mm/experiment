@@ -1,96 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Ratchet template page</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
 
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
 
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="css/ratchet.css" rel="stylesheet">
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
 
-
-</head>
-<body>
-
-<!-- Make sure all your bars are the first things in your <body> -->
-<header class="bar bar-nav">
-    <a class="icon icon-left-nav pull-left"></a>
-    <a class="icon icon-compose pull-right"></a>
-    <h1 class="title">Title</h1>
-</header>
-
-
-<nav class="bar bar-tab">
-    <a class="tab-item active" href="#">
-        <span class="icon icon-home"></span>
-        <span class="tab-label">Home</span>
-    </a>
-    <a class="tab-item" href="#">
-        <span class="icon icon-person"></span>
-        <span class="tab-label">Profile</span>
-    </a>
-    <a class="tab-item" href="#">
-        <span class="icon icon-star-filled"></span>
-        <span class="tab-label">Favorites</span>
-    </a>
-    <a class="tab-item" href="#">
-        <span class="icon icon-search"></span>
-        <span class="tab-label">Search</span>
-    </a>
-    <a class="tab-item" href="#">
-        <span class="icon icon-gear"></span>
-        <span class="tab-label">Settings</span>
-    </a>
-</nav>
-
-<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-<div class="content">
-    <p class="content-padded">Wir machen eine eigene App</p>
-    <div class="card">
-        <ul class="table-view">
-            <li class="table-view-cell">
-                <a class="navigate-right" href="article.html">
-                    zum Artikel
-                </a>
-            </li>
-            <li class="table-view-cell">
-                <a class="navigate-right" href="http://www.google.de">
-                    zu Google
-                </a>
-            </li>
-            <li class="table-view-cell">
-                <a class="navigate-right" href="#">
-                    Microsoft share price: Software giant announces Office Mix
-                </a>
-            </li>
-            <li class="table-view-cell">
-                <a class="navigate-right" href="#">
-                    Snapchat Settles FTC Charges That It Misled Users About Disappearing Photo ...
-                </a>
-            </li>
-            <li class="table-view-cell">
-                <a class="navigate-right" href="#">
-                    Apple Loop: Beats and Earbuds, Nokia's Imaging Brains And US Legal ...
-                </a>
-            </li>
-            <li class="table-view-cell">
-                <a class="navigate-right" href="#">
-                    Fed court overturns Oracle v. Google Java API copyright decision
-                </a>
-            </li>
-
-        </ul>
-    </div>
-</div>
-
-</body>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
 </html>
